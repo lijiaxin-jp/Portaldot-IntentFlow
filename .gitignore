@@ -1,0 +1,12 @@
+/target/
+/.cargo/
+.env
+.env.*
+!.env.example
+evidence/*.json
+evidence/*.log
+config/local*.toml
+/docs
+/scripts
+
+

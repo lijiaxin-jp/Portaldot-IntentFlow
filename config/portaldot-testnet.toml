@@ -1,0 +1,24 @@
+[network]
+name = "portaldot-testnet"
+websocket_url_env = "PORTALDOT_TESTNET_WS_URL"
+ss58_format = 42
+
+[contracts]
+token_a = ""
+token_b = ""
+pool_a = ""
+pool_b = ""
+intent_router = ""
+
+[solver]
+max_hops = 2
+max_price_impact_bps = 100
+max_stale_blocks = 2
+max_failure_risk_bps = 500
+min_net_output = "0"
+
+[execution]
+enabled = false
+dry_run_required = true
+max_fee = "0"
+deadline_blocks = 2

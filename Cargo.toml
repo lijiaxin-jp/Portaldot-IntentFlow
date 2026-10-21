@@ -1,0 +1,40 @@
+[workspace]
+members = [
+  "crates/defi-domain",
+  "crates/defi-engine",
+  "crates/portaldot-client",
+  "crates/portaldot-dex",
+  "crates/portaldot-solver",
+  "crates/portaldot-executor",
+  "crates/evidence-store",
+]
+resolver = "3"
+
+[workspace.package]
+edition = "2024"
+rust-version = "1.90"
+version = "0.1.0"
+license = "MIT"
+repository = "https://github.com/lijiaxin-jp/Portaldot-IntentFlow"
+
+[workspace.dependencies]
+async-trait = "0.1.89"
+defi-domain = { path = "crates/defi-domain" }
+defi-engine = { path = "crates/defi-engine" }
+evidence-store = { path = "crates/evidence-store" }
+portaldot-client = { path = "crates/portaldot-client" }
+portaldot-dex = { path = "crates/portaldot-dex" }
+portaldot-executor = { path = "crates/portaldot-executor" }
+portaldot-solver = { path = "crates/portaldot-solver" }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+sha2 = "0.10.9"
+thiserror = "2.0.17"
+ruint = { version = "1.20.0", default-features = false }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }

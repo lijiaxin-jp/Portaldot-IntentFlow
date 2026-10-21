@@ -1,0 +1,16 @@
+[package]
+name = "portaldot-solver"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+defi-domain.workspace = true
+defi-engine.workspace = true
+portaldot-dex.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+
+[lints]
+workspace = true
