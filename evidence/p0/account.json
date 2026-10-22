@@ -1,0 +1,34 @@
+{
+  "block_number": 130855,
+  "block_hash": "0x6eff7829d8de4f2f5148fdbc273707a1ecc208b5904f78928a3cd8e3ba6905c5",
+  "address": null,
+  "address_injected_via_environment": true,
+  "nonce": 4,
+  "free_balance": "9357270970086899",
+  "reserved_balance": "30396000000000000",
+  "token_symbol": "tPOT",
+  "token_decimals": 14,
+  "free_balance_token": "93.57270970086899",
+  "reserved_balance_token": "303.96000000000000",
+  "upload_code_storage_deposit": {
+    "wasm_bytes": 5000,
+    "deposit_per_byte": "6000000000000",
+    "deposit_per_item": "15000000000000",
+    "estimated_total": "30396000000000000",
+    "estimated_total_token": "303.96000000000000"
+  },
+  "upload_extrinsic_partial_fee_historical": {
+    "block_number": 127136,
+    "partial_fee": "1120926101729",
+    "partial_fee_token": "0.011209261"
+  },
+  "minimum_additional_funds_before_fees_token": "0.000000",
+  "current_upload_dry_run_error": null,
+  "latest_upload_dry_run_status": "pass",
+  "latest_upload_preflight_block": 130842,
+  "latest_upload_preflight_block_hash": "0x6fa3db02dbf8c9826475268e6e3902b9effce822fe47a872e1c20d340cab00a6",
+  "full_upload_budget": "completed_code_upload_and_single_instantiate",
+  "second_instance_storage_deposit": "9890800000000000",
+  "second_instance_storage_deposit_token": "98.90800000000000",
+  "second_instance_funding_shortfall_token": "5.33529029913101"
+}

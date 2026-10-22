@@ -1,0 +1,67 @@
+{
+  "block_number": 130855,
+  "block_hash": "0x6eff7829d8de4f2f5148fdbc273707a1ecc208b5904f78928a3cd8e3ba6905c5",
+  "metadata_version": 16,
+  "metadata_sha256": "6e88ee7d6e8ef19509be55882fc1c0fc7527736c1ba9c3b97b896ded28fda91d",
+  "pallet": {
+    "name": "Contracts",
+    "index": 21,
+    "contracts_host_api_version": 4,
+    "contracts_runtime_api_version": 2,
+    "max_code_len_bytes": 125952,
+    "max_contract_memory_pages": 16
+  },
+  "extrinsics": [
+    "callOldWeight",
+    "instantiateWithCodeOldWeight",
+    "instantiateOldWeight",
+    "uploadCode",
+    "removeCode",
+    "setCode",
+    "call",
+    "instantiateWithCode",
+    "instantiate",
+    "migrate"
+  ],
+  "events": [
+    "Instantiated",
+    "Terminated",
+    "CodeStored",
+    "ContractEmitted",
+    "CodeRemoved",
+    "ContractCodeUpdated",
+    "Called",
+    "DelegateCalled",
+    "StorageDepositTransferredAndHeld",
+    "StorageDepositTransferredAndReleased"
+  ],
+  "observed_errors": [
+    "ContractNotFound",
+    "StorageDepositNotEnoughFunds",
+    "CodeRejected"
+  ],
+  "contracts_error_indices": {
+    "24": "StorageDepositNotEnoughFunds",
+    "28": "CodeRejected"
+  },
+  "runtime_spec_version": 3002,
+  "metadata_hash_history": [
+    {
+      "block_number": 127136,
+      "metadata_sha256": "1275b664ce7e3ebced4347d06eb8fff4346096751c01cc08e8b50a8c63b3c187"
+    },
+    {
+      "block_number": 127841,
+      "metadata_sha256": "6fe838b338e7f8be4544ab6ff2f488c427541cca3588c5b1d98e376f404dd7db"
+    },
+    {
+      "block_number": 128350,
+      "metadata_sha256": "21119e930457f44e2f9bfde1bf3b0f2be53e14ed5f2a664a68540c5a6a2fb4c2"
+    },
+    {
+      "block_number": 130855,
+      "metadata_sha256": "6e88ee7d6e8ef19509be55882fc1c0fc7527736c1ba9c3b97b896ded28fda91d"
+    }
+  ],
+  "metadata_changed_with_same_spec_version": true
+}

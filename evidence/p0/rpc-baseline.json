@@ -1,0 +1,45 @@
+{
+  "network": "PortaldotV3 Test",
+  "node_name": "PortaldotV3 Node",
+  "node_version": "3.0.0-dev-fddd43141f2",
+  "websocket_endpoint_id": "wss://test-node-v3.portaldot.dev",
+  "finalized_observations": [
+    {
+      "number": 127136,
+      "hash": "0xd9953046e6f85df438715a3b4f58fef4352e42b5eb8c20f0cdfe538c7cc3f889",
+      "header_hash_matches": true,
+      "hash_by_number_matches": true,
+      "extrinsics": 1,
+      "events": 1
+    },
+    {
+      "number": 127148,
+      "hash": "0x6726d1e0451a4832b73187d5f4b0244ef95cc7c0a5fa9eabb496bc4ff778ad7a",
+      "header_hash_matches": true,
+      "hash_by_number_matches": true
+    },
+    {
+      "number": 127149,
+      "hash": "0xe45fac760385e81df8f3d86c2cec3461f29700ea73699c981c7f2c904acd10bb",
+      "header_hash_matches": true,
+      "hash_by_number_matches": true
+    }
+  ],
+  "height_monotonic": true,
+  "health": {
+    "is_syncing": false,
+    "peers": 2
+  },
+  "evm_endpoint": "https://test-evm-rpc-v3.portaldot.dev",
+  "evm_chain_id_hex": "0x190f1ca9",
+  "evm_chain_id_decimal": 420420777,
+  "latest_finalized_follow_up": {
+    "number": 128350,
+    "hash": "0x543faf3199495ea53aa4da9f5a3767a95972038688aad97d3916846deb6ed93e",
+    "header_number_matches": true,
+    "hash_by_number_matches": true,
+    "runtime_spec_version": 3002,
+    "metadata_sha256": "21119e930457f44e2f9bfde1bf3b0f2be53e14ed5f2a664a68540c5a6a2fb4c2",
+    "metadata_repeat_matches": true
+  }
+}

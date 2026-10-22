@@ -1,0 +1,63 @@
+{
+  "observed_at_utc": "2026-10-21T07:00:23Z",
+  "block_number": 128350,
+  "block_hash": "0x543faf3199495ea53aa4da9f5a3767a95972038688aad97d3916846deb6ed93e",
+  "spec_name": "portaldot-v3",
+  "implementation_name": "portaldot-v3-node",
+  "node_version": "3.0.0-dev-fddd43141f2",
+  "spec_version": 3002,
+  "transaction_version": 2,
+  "state_version": 1,
+  "metadata_version": 14,
+  "metadata_sha256": "21119e930457f44e2f9bfde1bf3b0f2be53e14ed5f2a664a68540c5a6a2fb4c2",
+  "metadata_sha256_repeat": "21119e930457f44e2f9bfde1bf3b0f2be53e14ed5f2a664a68540c5a6a2fb4c2",
+  "same_fixed_block_hash": true,
+  "metadata_hash_history": [
+    {
+      "block_number": 127136,
+      "block_hash": "0xd9953046e6f85df438715a3b4f58fef4352e42b5eb8c20f0cdfe538c7cc3f889",
+      "metadata_sha256": "1275b664ce7e3ebced4347d06eb8fff4346096751c01cc08e8b50a8c63b3c187"
+    },
+    {
+      "block_number": 127841,
+      "block_hash": "0x916436a4629973946339620042f0640e6c38278add9ef2dd2009ad2e926e26e5",
+      "metadata_sha256": "6fe838b338e7f8be4544ab6ff2f488c427541cca3588c5b1d98e376f404dd7db"
+    },
+    {
+      "block_number": 128350,
+      "block_hash": "0x543faf3199495ea53aa4da9f5a3767a95972038688aad97d3916846deb6ed93e",
+      "metadata_sha256": "21119e930457f44e2f9bfde1bf3b0f2be53e14ed5f2a664a68540c5a6a2fb4c2"
+    }
+  ],
+  "metadata_changed_with_same_spec_version": true,
+  "latest_finalized_follow_up": {
+    "number": 129563,
+    "hash": "0x8bf3bdd7e516026262d9491718b5240f5596e5999261365e47701357fa4758af",
+    "node_name": "PortaldotV3 Node",
+    "node_version": "3.0.0-dev-fddd43141f2",
+    "spec_version": 3002,
+    "transaction_version": 2,
+    "metadata_version": 14,
+    "metadata_sha256": "b096ad2cb9cb11db515fac2a652ae6761eaa852a63d8ed494be2c429eaf3b4b8",
+    "account_free_balance": "49700000000000000",
+    "account_reserved_balance": "0",
+    "account_nonce": 0,
+    "deposit_per_byte": "6000000000000",
+    "deposit_per_item": "15000000000000",
+    "max_code_len": 125952,
+    "metadata_changed_with_same_spec_version": true
+  },
+  "p0_lifecycle_follow_up": {
+    "latest_finalized_block_number": 130855,
+    "latest_finalized_block_hash": "0x6eff7829d8de4f2f5148fdbc273707a1ecc208b5904f78928a3cd8e3ba6905c5",
+    "node_name": "PortaldotV3 Node",
+    "node_version": "3.0.0-dev-fddd43141f2",
+    "spec_version": 3002,
+    "transaction_version": 2,
+    "metadata_version": 16,
+    "metadata_sha256": "6e88ee7d6e8ef19509be55882fc1c0fc7527736c1ba9c3b97b896ded28fda91d",
+    "contracts_host_api_version": 4,
+    "contracts_runtime_api_version": 2,
+    "metadata_changed_with_same_spec_version": true
+  }
+}

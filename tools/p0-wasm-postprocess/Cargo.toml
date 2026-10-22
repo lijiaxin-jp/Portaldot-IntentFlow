@@ -1,0 +1,12 @@
+[package]
+name = "p0-wasm-postprocess"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+wasm-encoder = { version = "0.220.0", features = ["wasmparser"] }
+wasmparser = "0.220.0"
+wasmi = { version = "=0.32.3", default-features = false }
+
+[workspace]

@@ -1,0 +1,17 @@
+{
+  "name": "intentflow-p2-testnet-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "p2:deploy": "node scripts/deploy-p2-testnet.mjs",
+    "p7:dashboard": "node apps/dashboard/server.mjs",
+    "p8:probe": "node scripts/p8-probe-readonly.mjs",
+    "p8:acceptance": "node scripts/p8-generate-acceptance.mjs"
+  },
+  "dependencies": {
+    "@polkadot/api": "17.0.2",
+    "@polkadot/api-contract": "17.0.2",
+    "@polkadot/keyring": "14.0.3",
+    "@polkadot/util-crypto": "14.0.3"
+  }
+}

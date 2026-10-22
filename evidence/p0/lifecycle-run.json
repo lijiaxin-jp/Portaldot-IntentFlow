@@ -1,0 +1,445 @@
+{
+  "schema_version": 1,
+  "network": "portaldot-testnet",
+  "endpoint_id": "test-node-v3.portaldot.dev",
+  "observed_at_utc": "2026-10-21T11:08:36.862Z",
+  "origin_address": null,
+  "origin_source": "PORTALDOT_TEST_ACCOUNT_ADDRESS environment variable",
+  "private_signing_material_used": true,
+  "private_signing_material_recorded": false,
+  "wasm_path": "contracts\\p0-probe\\target\\wasm32-unknown-unknown\\release\\portaldot_p0_probe.deployable.wasm",
+  "broadcast_count": 3,
+  "status": "pass_single_lifecycle",
+  "steps": {
+    "upload_dry_run": {
+      "status": "pass",
+      "code_hash": "0x07211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d085",
+      "deposit": "0",
+      "finalized_block": {
+        "number": 130823,
+        "hash": "0xf6b176cec5c99dd8abcea843d43716f3b23dae4fa86702a1824f0581e5809d0f"
+      }
+    },
+    "instantiate_with_code_dry_run": {
+      "status": "reused_finalized_instance",
+      "contract_address": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn"
+    },
+    "upload": {
+      "status": "pass",
+      "transaction_hash": "0xbcd0ac58f872132a4f6970fdc01fb814ac6070711fd72dcb0c4e3f735d917475",
+      "finalized_block_hash": "0xf966bd05d12d437668e1c0ebad782d1c28bf79d8da106e4c86432745ebee20f0",
+      "finalized_block_number": 130752,
+      "extrinsic_index": 1,
+      "events": [
+        {
+          "phase": 1,
+          "section": "balances",
+          "method": "Withdraw",
+          "data": {
+            "who": "[test-account]",
+            "amount": "51,131,094,121,597"
+          },
+          "data_sha256": "f1cf59ea25732c711a2833126bf8b38d4d0317fe17c096c0cef591c78681f025"
+        },
+        {
+          "phase": 1,
+          "section": "balances",
+          "method": "Held",
+          "data": {
+            "reason": {
+              "Contracts": "CodeUploadDepositReserve"
+            },
+            "who": "[test-account]",
+            "amount": "30,396,000,000,000,000"
+          },
+          "data_sha256": "87f424294e49334b0155abdbc2dbc85af3c9d8637232e05a46afe7143c97780c"
+        },
+        {
+          "phase": 1,
+          "section": "contracts",
+          "method": "CodeStored",
+          "data": {
+            "codeHash": "0x07211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d085",
+            "depositHeld": "30,396,000,000,000,000",
+            "uploader": "[test-account]"
+          },
+          "data_sha256": "3b1dc05269f028865fa87cbdc55904cf0a0531544c78dca541afab38c14fee90"
+        },
+        {
+          "phase": 1,
+          "section": "balances",
+          "method": "Deposit",
+          "data": {
+            "who": "5EYCAe5ijiYfyeZ2JJCGq56LmPyNRAKzpG4QkoQkkQNB5e6Z",
+            "amount": "51,131,094,121,597"
+          },
+          "data_sha256": "cf23f7c1d9c1d1f4fee55b9d70764eb55f272f1608184d99a9e04da3e21ca989"
+        },
+        {
+          "phase": 1,
+          "section": "transactionPayment",
+          "method": "TransactionFeePaid",
+          "data": {
+            "who": "[test-account]",
+            "actualFee": "51,131,094,121,597",
+            "tip": "0"
+          },
+          "data_sha256": "fe829401d778509fed50dff1e6184984ce2b19b0e5ba088c114c7cc873d1014b"
+        },
+        {
+          "phase": 1,
+          "section": "system",
+          "method": "ExtrinsicSuccess",
+          "data": {
+            "dispatchInfo": {
+              "weight": {
+                "refTime": "1,475,320,116",
+                "proofSize": "15,649"
+              },
+              "class": "Normal",
+              "paysFee": "Yes"
+            }
+          },
+          "data_sha256": "01c02a9549a439166c9647f3f40d46f53d9644060ba3c8f7b494e50422ec15cc"
+        }
+      ],
+      "fee_paid": "51131094121597",
+      "code_stored_event": {
+        "codeHash": "0x07211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d085",
+        "depositHeld": "30,396,000,000,000,000",
+        "uploader": "[test-account]"
+      },
+      "recovered_from_finalized_block": true
+    },
+    "instantiate": {
+      "status": "pass",
+      "transaction_hash": "0xa5021f157378162c3a4b3e79b56e0715358c88853f8b7da0d574b6abbb53c085",
+      "finalized_block_hash": "0x39777f55518f92249f177de66190497b0bf7a33b5768cd35444784c4a0acab1b",
+      "finalized_block_number": 130755,
+      "extrinsic_index": 1,
+      "events": [
+        {
+          "phase": 1,
+          "section": "balances",
+          "method": "Withdraw",
+          "data": {
+            "who": "[test-account]",
+            "amount": "1,655,480,326,526"
+          },
+          "data_sha256": "95946780487d756ab9256d22f55b5d296f2e086d326d518662d02cc5f1554aeb"
+        },
+        {
+          "phase": 1,
+          "section": "system",
+          "method": "NewAccount",
+          "data": {
+            "account": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn"
+          },
+          "data_sha256": "cbb7aaef5a54a980e12aaa2709e6dc86c43fd63c1a95ae42fb1d2c683920dc33"
+        },
+        {
+          "phase": 1,
+          "section": "balances",
+          "method": "Endowed",
+          "data": {
+            "account": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+            "freeBalance": "10,000,000,000,000"
+          },
+          "data_sha256": "adb5d18ea40fd26e43e20e4f45ca51dbe041f92cd06f7e4f59c0b07866d578a4"
+        },
+        {
+          "phase": 1,
+          "section": "balances",
+          "method": "Transfer",
+          "data": {
+            "from": "[test-account]",
+            "to": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+            "amount": "10,000,000,000,000"
+          },
+          "data_sha256": "d78b894b7f4ed781eaa803631b9057af22b9516edf75090c73e263624d279e2a"
+        },
+        {
+          "phase": 1,
+          "section": "contracts",
+          "method": "Instantiated",
+          "data": {
+            "deployer": "[test-account]",
+            "contract": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn"
+          },
+          "data_sha256": "c1fb9c6eaf7edc072d2767bcb0dae4bc220820f0b6fe187fd3071111a163d418"
+        },
+        {
+          "phase": 1,
+          "section": "balances",
+          "method": "TransferAndHold",
+          "data": {
+            "reason": {
+              "Contracts": "StorageDepositReserve"
+            },
+            "source": "[test-account]",
+            "dest": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+            "transferred": "9,865,800,000,000,000"
+          },
+          "data_sha256": "ecf75e40d70ff3cd7722df2e55f2f58276515324d4814f7e96b249e2f5b3aa02"
+        },
+        {
+          "phase": 1,
+          "section": "contracts",
+          "method": "StorageDepositTransferredAndHeld",
+          "data": {
+            "from": "[test-account]",
+            "to": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+            "amount": "9,865,800,000,000,000"
+          },
+          "data_sha256": "08cb26fa6cdd94d888cae4a3e2a12e678f4a3d32dcefe550f9e5cb03695f319d"
+        },
+        {
+          "phase": 1,
+          "section": "balances",
+          "method": "TransferAndHold",
+          "data": {
+            "reason": {
+              "Contracts": "StorageDepositReserve"
+            },
+            "source": "[test-account]",
+            "dest": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+            "transferred": "15,000,000,000,000"
+          },
+          "data_sha256": "c61896a8ef7b109cc20b6e8379e86a3ff8552ddd9f9fe7299b8e4d9b031220db"
+        },
+        {
+          "phase": 1,
+          "section": "contracts",
+          "method": "StorageDepositTransferredAndHeld",
+          "data": {
+            "from": "[test-account]",
+            "to": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+            "amount": "15,000,000,000,000"
+          },
+          "data_sha256": "c50aa9c5c95c857a3bebef0bd718e0e183a62d01a9fcfee021d89f6e44e0c710"
+        },
+        {
+          "phase": 1,
+          "section": "balances",
+          "method": "Deposit",
+          "data": {
+            "who": "[test-account]",
+            "amount": "160,030"
+          },
+          "data_sha256": "d1622918ebb106229dcf1366f54f39e3dc927587e5a4d0732a0c771ec9718061"
+        },
+        {
+          "phase": 1,
+          "section": "balances",
+          "method": "Deposit",
+          "data": {
+            "who": "5EYCAe5ijiYfyeZ2JJCGq56LmPyNRAKzpG4QkoQkkQNB5e6Z",
+            "amount": "1,655,480,166,496"
+          },
+          "data_sha256": "1f75837c5c91a34d817c393c5167be48e370ed293722123b1a35f67b625f9cc8"
+        },
+        {
+          "phase": 1,
+          "section": "transactionPayment",
+          "method": "TransactionFeePaid",
+          "data": {
+            "who": "[test-account]",
+            "actualFee": "1,655,480,166,496",
+            "tip": "0"
+          },
+          "data_sha256": "99fc5969be272aaca25b5c204dc9c2e8c8718a2a8844fc698f242e872017a136"
+        },
+        {
+          "phase": 1,
+          "section": "system",
+          "method": "ExtrinsicSuccess",
+          "data": {
+            "dispatchInfo": {
+              "weight": {
+                "refTime": "7,557,175,237",
+                "proofSize": "31,017"
+              },
+              "class": "Normal",
+              "paysFee": "Yes"
+            }
+          },
+          "data_sha256": "353b9b5ef69ae3583da72536e68029078ffc642ed49cdb305380a398171f207f"
+        }
+      ],
+      "fee_paid": "1655480166496",
+      "contract_address": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+      "instantiated_event": {
+        "deployer": "[test-account]",
+        "contract": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn"
+      },
+      "recovered_from_finalized_block": true
+    },
+    "instantiate_dry_run": {
+      "status": "pass",
+      "code_hash": "0x07211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d085",
+      "predicted_contract_address": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+      "gas_required": {
+        "refTime": 317930772,
+        "proofSize": 31547
+      },
+      "storage_deposit": "9890800000000000",
+      "finalized_block_hash": "0xf966bd05d12d437668e1c0ebad782d1c28bf79d8da106e4c86432745ebee20f0"
+    },
+    "contract_read": {
+      "status": "pass",
+      "contract_address": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+      "code_hash": "0x07211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d085",
+      "message_selector": "0xef04b70d",
+      "returned_data": "0x0000000000",
+      "gas_required": {
+        "refTime": 231474134,
+        "proofSize": 31546
+      },
+      "result_sha256": "297b602aa713f8ef26c5fe324767251a34edcbd82f248b0521c3db0a85ec36d2",
+      "repeated_at_same_block": true,
+      "repeated_result_matches": true,
+      "finalized_block_hash": "0x39777f55518f92249f177de66190497b0bf7a33b5768cd35444784c4a0acab1b"
+    },
+    "ping_dry_run": {
+      "status": "pass",
+      "contract_address": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+      "message_selector": "0xf706af5c",
+      "returned_data": "0x0000000000",
+      "gas_required": {
+        "refTime": 535373604,
+        "proofSize": 45174
+      },
+      "extrinsic_call_input_sha256": "706f328044860236d90f4fe00ee84467aac8704aeecabbc75280493441094780"
+    },
+    "ping": {
+      "status": "pass",
+      "transaction_hash": "0xf3a96c87072b228abc9c79596ca845ba349c2b99aaac6cf29b9df38cb8b06f3d",
+      "finalized_block_hash": "0x62c4963b83054e9b1ec152422bf2b831c214f7c60eee72880fe72a204fdd8b18",
+      "events": [
+        {
+          "phase": 1,
+          "section": "balances",
+          "method": "Withdraw",
+          "data": {
+            "who": "[test-account]",
+            "amount": "1,571,228,728,514"
+          },
+          "data_sha256": "5d237e3baf75ad934efbdbc1925037d76a09c6b6b27cd73d541617d57c084c16"
+        },
+        {
+          "phase": 1,
+          "section": "contracts",
+          "method": "ContractEmitted",
+          "data": {
+            "contract": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+            "data": ""
+          },
+          "data_sha256": "d23539c0341e8d88bbcf5ec185e504bc0b264f15b2da7b3ce0af4139a19c8cc5"
+        },
+        {
+          "phase": 1,
+          "section": "contracts",
+          "method": "Called",
+          "data": {
+            "caller": {
+              "Signed": "[test-account]"
+            },
+            "contract": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn"
+          },
+          "data_sha256": "6ba928d2b305f0c207463eeb95420653191920d6ac306f97bc7b8e02d6397881"
+        },
+        {
+          "phase": 1,
+          "section": "balances",
+          "method": "Deposit",
+          "data": {
+            "who": "[test-account]",
+            "amount": "889,423"
+          },
+          "data_sha256": "4172cb861619f512037da2e89bc0a0497c22a220c8e80a5764599e1df848a81b"
+        },
+        {
+          "phase": 1,
+          "section": "balances",
+          "method": "Deposit",
+          "data": {
+            "who": "5EYCAe5ijiYfyeZ2JJCGq56LmPyNRAKzpG4QkoQkkQNB5e6Z",
+            "amount": "1,571,227,839,091"
+          },
+          "data_sha256": "7a4f75d9b1497d76decc2c5ce5ef2ef1cc838b823f7799354f9ace7ea575db20"
+        },
+        {
+          "phase": 1,
+          "section": "transactionPayment",
+          "method": "TransactionFeePaid",
+          "data": {
+            "who": "[test-account]",
+            "actualFee": "1,571,227,839,091",
+            "tip": "0"
+          },
+          "data_sha256": "883d0abe66dbfe5c4ebf00070a18a60dd632d333c759963e907ff7c43e4f4082"
+        },
+        {
+          "phase": 1,
+          "section": "system",
+          "method": "ExtrinsicSuccess",
+          "data": {
+            "dispatchInfo": {
+              "weight": {
+                "refTime": "1,661,031,074",
+                "proofSize": "44,911"
+              },
+              "class": "Normal",
+              "paysFee": "Yes"
+            }
+          },
+          "data_sha256": "0260e01c076b68ab7751f3a06ec540f7aba956e88b6d3635d2314658a57b75de"
+        }
+      ],
+      "fee_paid": null,
+      "contract_emitted_event": {
+        "contract": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+        "data": ""
+      },
+      "called_event": {
+        "caller": {
+          "Signed": "[test-account]"
+        },
+        "contract": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn"
+      }
+    }
+  },
+  "probe": {
+    "wasm_bytes": 5000,
+    "wasm_sha256": "2eb12ff2ca18063619943f96934fc7d6b40e03a8364a06795c6bb0d49e696271",
+    "expected_code_hash": "0x07211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d085",
+    "constructor_selector": "0x9bae9d5e",
+    "get_sequence_selector": "0xef04b70d",
+    "ping_selector": "0xf706af5c",
+    "salt": "0x69d143d91f51d8bc"
+  },
+  "signer_address_matches_configured_account": true,
+  "initial_finalized_block": {
+    "number": 130823,
+    "hash": "0xf6b176cec5c99dd8abcea843d43716f3b23dae4fa86702a1824f0581e5809d0f"
+  },
+  "runtime": {
+    "spec_name": "portaldot-v3",
+    "spec_version": 3002,
+    "transaction_version": 2,
+    "metadata_version": 16,
+    "metadata_sha256": "70ecf453949826d5de8bb14143e3c72d3944a9a7efbc6464dd7ed47a7bf9b5ee",
+    "contracts_api_version": 2
+  },
+  "fee_preflight": {
+    "account_free_balance": "9360413425711907",
+    "account_free_balance_token": "93.60413425711907",
+    "upload_code_storage_deposit": "0",
+    "upload_extrinsic_partial_fee": "51131093936793",
+    "budget_check": "pass_for_resumed_contract_call"
+  },
+  "resumed_from_previous_report": true,
+  "resumed_contract_address": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+  "completed_at_utc": "2026-10-21T11:09:13.816Z",
+  "account_address_injected_via_environment": true
+}

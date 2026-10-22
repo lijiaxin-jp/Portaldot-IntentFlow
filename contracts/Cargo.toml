@@ -1,0 +1,8 @@
+[workspace]
+members = [
+  "p2-interface",
+  "psp22-test-token",
+  "amm-pool",
+  "intent-router",
+]
+resolver = "2"

@@ -1,0 +1,136 @@
+{
+  "block_number": 127136,
+  "block_hash": "0xd9953046e6f85df438715a3b4f58fef4352e42b5eb8c20f0cdfe538c7cc3f889",
+  "probe_wasm_sha256": "8d930ca195b8d5adeb2648c8999aede6f5f0426b44235ea48f9cb80582126012",
+  "probe_code_hash_blake2_256": "0x99c0f1613b2729a9942c611cde5ac13c4f02d4ee76ffb82bf20a6b435e4a370b",
+  "contracts_api": "ContractsApi",
+  "upload_code": {
+    "status": "dispatch_error",
+    "error": "Contracts.CodeRejected",
+    "raw_result": "0x0103151c000000",
+    "repeat_result_matches": true,
+    "repeat_raw_result": "0x0103151c000000",
+    "assessment": "superseded: request length prefix used malformed SCALE compact encoding"
+  },
+  "call_missing_address": {
+    "status": "execution_error",
+    "error": "Contracts.ContractNotFound",
+    "raw_result": "0x00000000010000000000000000000000000000000000010315060000000104000000000000002290753e5517020000",
+    "repeat_result_matches": true,
+    "repeat_raw_result": "0x00000000010000000000000000000000000000000000010315060000000104000000000000002290753e5517020000"
+  },
+  "instantiate_with_code": {
+    "status": "execution_error",
+    "error": "Contracts.CodeRejected",
+    "debug_message": "Can't load the module into wasmi!",
+    "raw_result": "0x0000000001000000000000000000000000000000008443616e2774206c6f616420746865206d6f64756c6520696e746f207761736d69210103151c0000000104000000000000002290753e5517020000",
+    "assessment": "unverified: original request bytes were not retained and the encoder was later found to omit the SCALE compact-length mode bit"
+  },
+  "successful_contract_call_observed": false,
+  "notes": [
+    "The missing-address dry-run demonstrates a typed and decodable failure response; it is not a successful contract execution.",
+    "Historical CodeRejected upload results are superseded: their request length prefix omitted the SCALE compact mode bit.",
+    "The probe Wasm was rebuilt and post-processed using the cargo-contract 5.0.3 compatibility rules before the historical retry."
+  ],
+  "compatibility_retry": {
+    "block_number": 127841,
+    "block_hash": "0x916436a4629973946339620042f0640e6c38278add9ef2dd2009ad2e926e26e5",
+    "probe_wasm_sha256": "7ada332a8cb2260e29dad6a7183a0ec05c097b29f15e31008b4dc90435dd4ab2",
+    "probe_code_hash_blake2_256": "0xedb6038e68823d466a935a52ab20af8aedbe1ba2a24b8f7a12d49c0bf6faca28",
+    "local_wasmi_0_32_3_validation": "pass",
+    "upload_code": {
+      "status": "dispatch_error",
+      "error": "Contracts.CodeRejected",
+      "raw_result": "0x0103151c000000",
+      "typed_rpc_result_matches_raw": true
+    },
+    "instantiate_with_code": {
+      "status": "execution_error",
+      "error": "Contracts.CodeRejected",
+      "debug_message": "Can't load the module into wasmi!",
+      "raw_result": "0x0000000001000000000000000000000000000000008443616e2774206c6f616420746865206d6f64756c6520696e746f207761736d69210103151c0000000104000000000000002290753e5517020000"
+    },
+    "successful_contract_call_observed": false,
+    "broadcast_count": 0,
+    "assessment": "historical CodeRejected result is not reliable Wasm compatibility evidence because its exact request bytes were not retained"
+  },
+  "upload_preflight_follow_up": {
+    "block_number": 130285,
+    "block_hash": "0x99063a77dedcf47cd5f0e932d54ec1784e0127156debf44cc2a1048922dd697f",
+    "runtime_spec_version": 3002,
+    "metadata_version": 14,
+    "metadata_sha256": "a9c5af589080f39a88b8729445396055d656880ce4d4df432c2c42e8b0c3996c",
+    "probe_wasm_bytes": 5000,
+    "probe_wasm_sha256": "2eb12ff2ca18063619943f96934fc7d6b40e03a8364a06795c6bb0d49e696271",
+    "probe_code_hash_blake2_256": "0x07211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d085",
+    "local_wasmi_0_32_3_validation": "pass",
+    "scale_vec_length_prefix": "0x214e",
+    "upload_code": {
+      "status": "pass",
+      "raw_result": "0x0007211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d08500c0973e00fd6b000000000000000000"
+    },
+    "instantiate_dry_run": "not_retested_with_corrected_scale_encoding",
+    "successful_contract_call_observed": false,
+    "broadcast_count": 0
+  },
+  "lifecycle_follow_up": {
+    "contracts_runtime_api_version": 2,
+    "upload_dry_run": {
+      "status": "pass",
+      "code_hash": "0x07211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d085",
+      "finalized_upload_block_number": 130752,
+      "finalized_upload_block_hash": "0xf966bd05d12d437668e1c0ebad782d1c28bf79d8da106e4c86432745ebee20f0"
+    },
+    "instantiate_dry_run": {
+      "status": "pass",
+      "predicted_contract_address": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+      "gas_required": {
+        "ref_time": "317930772",
+        "proof_size": "31547"
+      },
+      "storage_deposit": "9890800000000000",
+      "finalized_state_hash": "0xf966bd05d12d437668e1c0ebad782d1c28bf79d8da106e4c86432745ebee20f0"
+    },
+    "get_sequence": {
+      "status": "pass",
+      "returned_data": "0x0000000000",
+      "same_block_repeat_matches": true,
+      "result_sha256": "297b602aa713f8ef26c5fe324767251a34edcbd82f248b0521c3db0a85ec36d2"
+    },
+    "ping": {
+      "dry_run_status": "pass",
+      "returned_data": "0x0000000000",
+      "finalized_call_status": "pass",
+      "events": ["Contracts.ContractEmitted", "Contracts.Called", "System.ExtrinsicSuccess"]
+    },
+    "repeated_existing_contract_call": "pass",
+    "second_distinct_instance": {
+      "status": "inconclusive",
+      "error": "Contracts.StorageDepositNotEnoughFunds",
+      "required_deposit_token": "98.90800000000000",
+      "free_balance_token": "93.57270970086899"
+    },
+    "broadcast_count": 4
+  },
+  "previous_observation_recheck": {
+    "block_number": 128350,
+    "block_hash": "0x543faf3199495ea53aa4da9f5a3767a95972038688aad97d3916846deb6ed93e",
+    "probe_wasm_sha256": "07e67e68887a9b3ed2e806b6617f934db7d97d413c99ac6e6644b577c6d47274",
+    "previously_recorded_upload_error": "Contracts.StorageDepositNotEnoughFunds",
+    "rechecked_upload_error": "Contracts.CodeRejected",
+    "rechecked_raw_result": "0x0103151c000000",
+    "enforced_and_relaxed_modes_match": true,
+    "result_conflict": true,
+    "assessment": "historical result predates confirmation of malformed SCALE compact length encoding"
+  },
+  "scale_encoding_comparison": {
+    "block_number": 130248,
+    "block_hash": "0x4dd44835edb02e597f79708f050f8b21133785b8de713e0781a32c217d37722b",
+    "wasm_bytes": 5000,
+    "malformed_prefix": "0x204e",
+    "malformed_result": "0x0103151c000000",
+    "correct_prefix": "0x214e",
+    "correct_result": "0x0007211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d08500c0973e00fd6b000000000000000000",
+    "same_wasm_account_and_block": true
+  }
+}

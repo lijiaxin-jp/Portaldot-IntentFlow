@@ -8,7 +8,11 @@ license.workspace = true
 [dependencies]
 async-trait.workspace = true
 defi-domain.workspace = true
+hex.workspace = true
+parity-scale-codec.workspace = true
+portaldot-client.workspace = true
 serde.workspace = true
+serde_json.workspace = true
 thiserror.workspace = true
 
 [lints]

@@ -1,0 +1,104 @@
+{
+  "source": "contracts/p0-probe/src/lib.rs",
+  "ink_version": "5.1.1",
+  "target": "wasm32-unknown-unknown",
+  "wasm_path": "contracts/p0-probe/target/wasm32-unknown-unknown/release/portaldot_p0_probe.deployable.wasm",
+  "build_profile": {
+    "rust_version": "1.97.1",
+    "rustflags": "-Ctarget-cpu=mvp -Clink-arg=--import-memory -Clink-arg=-zstack-size=65536",
+    "binaryen_wasm_opt": "132.0.0",
+    "optimization_flags": ["-Oz", "--llvm-memory-copy-fill-lowering"],
+    "post_process_rules": "P0 postprocessor: env.memory maximum 16 pages, call/deploy exports only, custom sections removed"
+  },
+  "wasm_bytes": 5000,
+  "wasm_sha256": "2eb12ff2ca18063619943f96934fc7d6b40e03a8364a06795c6bb0d49e696271",
+  "code_hash_blake2_256": "0x07211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d085",
+  "runtime_limits": {
+    "maximum_code_bytes": 125952,
+    "maximum_memory_pages": 16,
+    "module_memory_pages": 2,
+    "memory_import_present": true
+  },
+  "local_validation": {
+    "wasmparser_section_parse": "pass",
+    "wasmi_0_32_3_pallet_contracts_config": "pass",
+    "cargo_contract_import_rules": "pass"
+  },
+  "testnet_upload_dry_run": {
+    "status": "pass",
+    "raw_result": "0x0007211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d08500c0973e00fd6b000000000000000000",
+    "scale_vec_length_prefix": "0x214e",
+    "finalized_block_number": 130285,
+    "finalized_block_hash": "0x99063a77dedcf47cd5f0e932d54ec1784e0127156debf44cc2a1048922dd697f",
+    "metadata_sha256": "a9c5af589080f39a88b8729445396055d656880ce4d4df432c2c42e8b0c3996c",
+    "estimated_code_storage_deposit_token": "300.150000",
+    "account_free_balance_token": "497.000000"
+  },
+  "instantiate_dry_run": {
+    "status": "pass",
+    "runtime_api": "ContractsApi v2",
+    "predicted_contract_address": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+    "gas_required": {
+      "ref_time": "317930772",
+      "proof_size": "31547"
+    },
+    "storage_deposit": "9890800000000000",
+    "finalized_state_hash": "0xf966bd05d12d437668e1c0ebad782d1c28bf79d8da106e4c86432745ebee20f0"
+  },
+  "historical_compatibility_retry": {
+    "probe_wasm_sha256": "7ada332a8cb2260e29dad6a7183a0ec05c097b29f15e31008b4dc90435dd4ab2",
+    "wasm_bytes": 26621,
+    "finalized_block_number": 127841,
+    "finalized_block_hash": "0x916436a4629973946339620042f0640e6c38278add9ef2dd2009ad2e926e26e5",
+    "assessment": "unverified; historical runtime API request bytes were not retained and the later same-path CodeRejected was reproduced by malformed SCALE encoding"
+  },
+  "previous_attempt": {
+    "target": "wasm32-unknown-unknown",
+    "wasm_bytes": 5776,
+    "wasm_sha256": "8d930ca195b8d5adeb2648c8999aede6f5f0426b44235ea48f9cb80582126012",
+    "wasmi_0_32_3_pallet_contracts_config": "fail: bulk memory support is not enabled at offset 305",
+    "unsupported_operator": "MemoryFill"
+  },
+  "instance_address": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+  "upload_transaction": {
+    "status": "finalized_success",
+    "transaction_hash": "0xbcd0ac58f872132a4f6970fdc01fb814ac6070711fd72dcb0c4e3f735d917475",
+    "block_number": 130752,
+    "block_hash": "0xf966bd05d12d437668e1c0ebad782d1c28bf79d8da106e4c86432745ebee20f0",
+    "code_storage_deposit": "30396000000000000"
+  },
+  "instantiate_transaction": {
+    "status": "finalized_success",
+    "transaction_hash": "0xa5021f157378162c3a4b3e79b56e0715358c88853f8b7da0d574b6abbb53c085",
+    "block_number": 130755,
+    "block_hash": "0x39777f55518f92249f177de66190497b0bf7a33b5768cd35444784c4a0acab1b"
+  },
+  "lifecycle_follow_up": {
+    "upload_deposit_token": "303.96000000000000",
+    "instantiate_storage_deposit_token": "98.90800000000000",
+    "get_sequence_selector": "0xef04b70d",
+    "get_sequence_result": "0x0000000000",
+    "same_finalized_block_repeat_matches": true,
+    "ping_selector": "0xf706af5c",
+    "ping_event_types": ["Contracts.ContractEmitted", "Contracts.Called", "System.ExtrinsicSuccess"],
+    "repeat_existing_contract_call": "pass",
+    "full_independent_lifecycle_repeatability": "inconclusive",
+    "additional_instance_deposit_shortfall_token": "5.33529029913101"
+  },
+  "successful_contract_call": {
+    "status": "finalized_success",
+    "transaction_hash": "0xf3a96c87072b228abc9c79596ca845ba349c2b99aaac6cf29b9df38cb8b06f3d",
+    "block_number": 130828,
+    "block_hash": "0x62c4963b83054e9b1ec152422bf2b831c214f7c60eee72880fe72a204fdd8b18"
+  },
+  "repeat_call_transaction": {
+    "status": "finalized_success",
+    "transaction_hash": "0x021a2f3633c33ff8b2c9ba00e9e95adce2b6efd6e6a1915d0d76092cdcecda30",
+    "block_number": 130847,
+    "block_hash": "0xc9047074150881cb6e79b7d24ee16a7f3b50806707d2e9cbe8aa6f98aac0c278"
+  },
+  "full_lifecycle_repeatability": {
+    "status": "inconclusive",
+    "reason": "The second instance dry-run requires more storage deposit than the remaining free balance."
+  }
+}

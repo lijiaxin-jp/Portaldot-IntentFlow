@@ -1,0 +1,55 @@
+{
+  "broadcast_count": 4,
+  "private_signing_material_recorded": false,
+  "latest_finalized": {
+    "block_number": 130855,
+    "block_hash": "0x6eff7829d8de4f2f5148fdbc273707a1ecc208b5904f78928a3cd8e3ba6905c5"
+  },
+  "upload": {
+    "status": "finalized_success",
+    "transaction_hash": "0xbcd0ac58f872132a4f6970fdc01fb814ac6070711fd72dcb0c4e3f735d917475",
+    "block_number": 130752,
+    "block_hash": "0xf966bd05d12d437668e1c0ebad782d1c28bf79d8da106e4c86432745ebee20f0",
+    "code_hash": "0x07211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d085",
+    "events": ["Contracts.CodeStored", "System.ExtrinsicSuccess"],
+    "fee_paid": "51131094121597",
+    "code_storage_deposit": "30396000000000000"
+  },
+  "instantiate": {
+    "status": "finalized_success",
+    "transaction_hash": "0xa5021f157378162c3a4b3e79b56e0715358c88853f8b7da0d574b6abbb53c085",
+    "block_number": 130755,
+    "block_hash": "0x39777f55518f92249f177de66190497b0bf7a33b5768cd35444784c4a0acab1b",
+    "contract_address": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn",
+    "events": ["Contracts.Instantiated", "Contracts.StorageDepositTransferredAndHeld", "System.ExtrinsicSuccess"],
+    "fee_paid": "1655480166496",
+    "storage_deposit": "9890800000000000"
+  },
+  "first_ping": {
+    "status": "finalized_success",
+    "transaction_hash": "0xf3a96c87072b228abc9c79596ca845ba349c2b99aaac6cf29b9df38cb8b06f3d",
+    "block_number": 130828,
+    "block_hash": "0x62c4963b83054e9b1ec152422bf2b831c214f7c60eee72880fe72a204fdd8b18",
+    "events": ["Contracts.ContractEmitted", "Contracts.Called", "System.ExtrinsicSuccess"],
+    "fee_paid": "1571227839091"
+  },
+  "repeat_ping": {
+    "status": "finalized_success",
+    "transaction_hash": "0x021a2f3633c33ff8b2c9ba00e9e95adce2b6efd6e6a1915d0d76092cdcecda30",
+    "block_number": 130847,
+    "block_hash": "0xc9047074150881cb6e79b7d24ee16a7f3b50806707d2e9cbe8aa6f98aac0c278",
+    "events": ["Contracts.ContractEmitted", "Contracts.Called", "System.ExtrinsicSuccess"],
+    "fee_paid": "1571227785917"
+  },
+  "event_query_status": "pass",
+  "contract_call_repeatability": {
+    "same_block_get_sequence_result_sha256": "297b602aa713f8ef26c5fe324767251a34edcbd82f248b0521c3db0a85ec36d2",
+    "repeated_result_matches": true,
+    "repeat_ping_event_matches": true
+  },
+  "full_lifecycle_repeatability": {
+    "status": "inconclusive",
+    "reason": "A second distinct instance requires a 98.908 tPOT storage deposit; 93.57270970086899 tPOT remains free.",
+    "explicit_deposit_limit_dry_run_error": "Contracts.StorageDepositNotEnoughFunds"
+  }
+}

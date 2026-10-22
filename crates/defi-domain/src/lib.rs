@@ -13,6 +13,12 @@ pub const FEE_DENOMINATOR_BPS: u32 = 10_000;
 pub type Hash = [u8; 32];
 pub type Balance = u128;
 
+#[derive(Clone, Copy, Debug, Default, Deserialize, Eq, PartialEq, Serialize)]
+pub struct GasWeight {
+    pub ref_time: u64,
+    pub proof_size: u64,
+}
+
 #[derive(
     Clone, Copy, Debug, Default, Deserialize, Eq, Hash, Ord, PartialEq, PartialOrd, Serialize,
 )]

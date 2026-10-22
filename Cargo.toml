@@ -2,6 +2,7 @@
 members = [
   "crates/defi-domain",
   "crates/defi-engine",
+  "crates/portaldot-config",
   "crates/portaldot-client",
   "crates/portaldot-dex",
   "crates/portaldot-solver",
@@ -19,17 +20,27 @@ repository = "https://github.com/lijiaxin-jp/Portaldot-IntentFlow"
 
 [workspace.dependencies]
 async-trait = "0.1.89"
+hex = "0.4.3"
 defi-domain = { path = "crates/defi-domain" }
 defi-engine = { path = "crates/defi-engine" }
 evidence-store = { path = "crates/evidence-store" }
 portaldot-client = { path = "crates/portaldot-client" }
+portaldot-config = { path = "crates/portaldot-config" }
 portaldot-dex = { path = "crates/portaldot-dex" }
 portaldot-executor = { path = "crates/portaldot-executor" }
 portaldot-solver = { path = "crates/portaldot-solver" }
 serde = { version = "1.0.228", features = ["derive"] }
 serde_json = "1.0.149"
 sha2 = "0.10.9"
+sqlx = { version = "0.8.6", default-features = false, features = ["runtime-tokio", "sqlite"] }
+parity-scale-codec = { version = "3.7.4", features = ["derive"] }
+subxt = { version = "0.51.1", default-features = false, features = ["jsonrpsee", "native", "reconnecting-rpc-client"] }
+sp-core = { version = "34.0.0", default-features = false, features = ["std"] }
 thiserror = "2.0.17"
+tokio = { version = "1.45.1", features = ["time"] }
+toml = "0.8.23"
+tracing = "0.1.44"
+zeroize = "1.9.1"
 ruint = { version = "1.20.0", default-features = false }
 
 [workspace.lints.rust]

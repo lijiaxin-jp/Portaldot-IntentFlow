@@ -9,8 +9,11 @@ license.workspace = true
 defi-domain.workspace = true
 defi-engine.workspace = true
 portaldot-dex.workspace = true
+portaldot-config.workspace = true
 serde.workspace = true
+serde_json.workspace = true
 thiserror.workspace = true
+tracing.workspace = true
 
 [lints]
 workspace = true

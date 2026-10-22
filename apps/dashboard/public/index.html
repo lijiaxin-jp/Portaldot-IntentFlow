@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>Portaldot IntentFlow | 运行面板</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Portaldot IntentFlow 运行面板">
+        <span class="brand-mark" aria-hidden="true">IF</span>
+        <span><strong>IntentFlow</strong><small>Portaldot 测试网</small></span>
+      </a>
+      <div class="topbar-actions">
+        <span id="updated-at" class="muted">等待数据</span>
+        <a class="button secondary" href="https://node-console.portaldot.dev/" target="_blank" rel="noreferrer">节点浏览器 ↗</a>
+        <button id="refresh" class="button primary" type="button">刷新</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-heading">
+        <div>
+          <p class="eyebrow">运维 / 证据</p>
+          <h1>运行面板</h1>
+        </div>
+        <p id="database-state" class="state-line">正在读取本地证据库</p>
+      </section>
+
+      <section class="metrics" aria-label="运行摘要">
+        <div class="metric"><span>最新运行</span><strong id="metric-run">未采集</strong><small id="metric-runtime">runtime 信息未采集</small></div>
+        <div class="metric"><span>池快照</span><strong id="metric-pools">0</strong><small>来自已保存的区块快照</small></div>
+        <div class="metric"><span>执行证据</span><strong id="metric-evidence">0</strong><small id="metric-status">没有已确认交易</small></div>
+        <div class="metric"><span>本地模拟耗时</span><strong id="metric-latency">--</strong><small>仅统计真实保存样本</small></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <div><p class="eyebrow">状态快照</p><h2>Runtime 与流动性池</h2></div>
+          <span id="snapshot-block" class="muted">尚无区块快照</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>池地址</th><th>资产</th><th>储备</th><th>费率</th><th>区块</th></tr></thead>
+            <tbody id="pools-body"><tr><td colspan="5" class="empty">尚未保存池状态快照</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <div><p class="eyebrow">可追踪执行</p><h2>Intent 与交易证据</h2></div>
+          <label class="search"><span>筛选</span><input id="search" type="search" placeholder="Intent / route / tx hash" autocomplete="off"></label>
+        </div>
+        <div class="table-wrap">
+          <table class="evidence-table">
+            <thead><tr><th>Intent</th><th>状态</th><th>报价</th><th>Route</th><th>交易 hash</th><th>区块 / 事件</th><th>结果</th></tr></thead>
+            <tbody id="evidence-body"><tr><td colspan="7" class="empty">尚无执行证据</td></tr></tbody>
+          </table>
+        </div>
+        <div id="detail" class="detail-panel" hidden></div>
+      </section>
+
+      <section class="section-block bottom-grid">
+        <div>
+          <div class="section-heading compact"><div><p class="eyebrow">可复现</p><h2>验收报告</h2></div></div>
+          <p class="section-copy">报告从当前 SQLite 证据库读取部署记录、交易和测量耗时；不足项会保留为未达标。</p>
+          <code class="command">npm run p8:acceptance</code>
+        </div>
+        <div class="requirement-list">
+          <div><span>测试网交易</span><strong id="requirement-transactions">0 / 10</strong></div>
+          <div><span>部署记录</span><strong id="requirement-deployments">未采集</strong></div>
+          <div><span>性能样本</span><strong id="requirement-performance">未采集</strong></div>
+        </div>
+      </section>
+      <footer>只读视图 · 交易、签名与链上写入不由此面板触发</footer>
+    </main>
+  </body>
+</html>

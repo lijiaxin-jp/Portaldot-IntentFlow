@@ -1,0 +1,43 @@
+name: Rust CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+          components: rustfmt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - uses: Swatinem/rust-cache@v2
+      - name: Check formatting
+        run: cargo fmt --all -- --check
+      - name: Check chain-neutral and Portaldot crates
+        run: cargo check --workspace --locked
+      - name: Validate testnet configuration
+        run: cargo run -p portaldot-config --example validate --locked -- config/portaldot-testnet.toml
+      - name: Check standalone ink! probe
+        run: cargo check --manifest-path contracts/p0-probe/Cargo.toml --target wasm32-unknown-unknown --no-default-features --locked
+      - name: Check P2 contract formatting
+        run: cargo fmt --manifest-path contracts/Cargo.toml --all -- --check
+      - name: Test P2 contracts
+        run: cargo test --manifest-path contracts/Cargo.toml --workspace --locked
+      - name: Build P2 contract Wasm
+        run: cargo build --manifest-path contracts/Cargo.toml --workspace --release --target wasm32-unknown-unknown --no-default-features --locked
+      - name: Check P3 tooling syntax
+        run: node --check scripts/deploy-p2-testnet.mjs
+      - name: Check P3 deployment plan
+        run: node -e "JSON.parse(require('node:fs').readFileSync('config/p2-testnet-deployment.example.json', 'utf8'))"
+      - name: Install pinned P3 tooling
+        run: npm ci --ignore-scripts --no-audit --no-fund

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "network": "portaldot-testnet",
+  "observed_at_utc": "2026-10-21T10:15:02.236Z",
+  "observed_finalized_block": {
+    "number": 130285,
+    "hash": "0x99063a77dedcf47cd5f0e932d54ec1784e0127156debf44cc2a1048922dd697f"
+  },
+  "runtime": {
+    "spec_name": "portaldot-v3",
+    "spec_version": 3002,
+    "transaction_version": 2,
+    "metadata_sha256": "a9c5af589080f39a88b8729445396055d656880ce4d4df432c2c42e8b0c3996c"
+  },
+  "origin_source": "PORTALDOT_TEST_ACCOUNT_ADDRESS environment variable",
+  "private_signing_material_used": false,
+  "probe": {
+    "wasm_path": "contracts\\p0-probe\\target\\wasm32-unknown-unknown\\release\\portaldot_p0_probe.deployable.wasm",
+    "wasm_bytes": 5000,
+    "wasm_sha256": "2eb12ff2ca18063619943f96934fc7d6b40e03a8364a06795c6bb0d49e696271",
+    "scale_vec_length_prefix": "0x214e"
+  },
+  "upload_code_dry_run": {
+    "status": "pass",
+    "raw_result": "0x0007211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d08500c0973e00fd6b000000000000000000",
+    "finalized_block_number": 130285,
+    "finalized_block_hash": "0x99063a77dedcf47cd5f0e932d54ec1784e0127156debf44cc2a1048922dd697f",
+    "metadata_sha256": "a9c5af589080f39a88b8729445396055d656880ce4d4df432c2c42e8b0c3996c"
+  },
+  "broadcast_count": 0
+}

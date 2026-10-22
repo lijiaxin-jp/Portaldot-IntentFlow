@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "network": "portaldot-testnet",
+  "endpoint_id": "wss://test-node-v3.portaldot.dev",
+  "observed_at_utc": "2026-10-21T11:11:43Z",
+  "observed_finalized_block": {
+    "number": 130855,
+    "hash": "0x6eff7829d8de4f2f5148fdbc273707a1ecc208b5904f78928a3cd8e3ba6905c5"
+  },
+  "runtime": {
+    "spec_name": "portaldot-v3",
+    "spec_version": 3002,
+    "transaction_version": 2,
+    "metadata_version": 16,
+    "metadata_sha256": "6e88ee7d6e8ef19509be55882fc1c0fc7527736c1ba9c3b97b896ded28fda91d",
+    "contracts_api_version": 2
+  },
+  "account": {
+    "address": null,
+    "address_injected_via_environment": true,
+    "free_balance": "9357270970086899",
+    "free_balance_token": "93.57270970086899",
+    "reserved_balance": "30396000000000000",
+    "reserved_balance_token": "303.96000000000000",
+    "token": "tPOT",
+    "decimals": 14,
+    "nonce": 4,
+    "block_number": 130855,
+    "block_hash": "0x6eff7829d8de4f2f5148fdbc273707a1ecc208b5904f78928a3cd8e3ba6905c5"
+  },
+  "capabilities": {
+    "websocket_finalized": "pass",
+    "evm_chain_id": "pass",
+    "runtime_metadata": "pass",
+    "contracts_module": "pass",
+    "account_read": "pass",
+    "contracts_dry_run_api": "pass",
+    "contracts_upload_dry_run": "pass",
+    "contracts_dry_run_success": "pass",
+    "wasm_upload": "pass",
+    "instantiate": "pass",
+    "event_queries": "pass",
+    "contract_call_repeatability": "pass",
+    "full_lifecycle_repeatability": "inconclusive"
+  },
+  "probe_contract": {
+    "wasm_bytes": 5000,
+    "wasm_sha256": "2eb12ff2ca18063619943f96934fc7d6b40e03a8364a06795c6bb0d49e696271",
+    "code_hash_blake2_256": "0x07211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d085",
+    "upload_dry_run_status": "pass",
+    "contract_address": "5E3miyBUvG1SX6KTT8zU4tx2XXwprqLv43ZP3riMXPQ1uMyn"
+  },
+  "historical_compatibility_follow_up": {
+    "finalized_block_number": 127841,
+    "finalized_block_hash": "0x916436a4629973946339620042f0640e6c38278add9ef2dd2009ad2e926e26e5",
+    "assessment": "historical CodeRejected result is superseded by the confirmed malformed SCALE compact length prefix",
+    "broadcast_count": 0
+  },
+  "latest_chain_observation": {
+    "observed_at_utc": "2026-10-21T11:11:43Z",
+    "finalized_block_number": 130855,
+    "finalized_block_hash": "0x6eff7829d8de4f2f5148fdbc273707a1ecc208b5904f78928a3cd8e3ba6905c5",
+    "metadata_sha256": "6e88ee7d6e8ef19509be55882fc1c0fc7527736c1ba9c3b97b896ded28fda91d"
+  },
+  "upload_preflight_evidence": {
+    "latest_block_reference_without_raw_result": {
+      "finalized_block_number": 130842,
+      "finalized_block_hash": "0x6fa3db02dbf8c9826475268e6e3902b9effce822fe47a872e1c20d340cab00a6",
+      "status_recorded_in_account_snapshot": "pass",
+      "raw_result_retained": false
+    },
+    "retained_successful_result": {
+      "observed_at_utc": "2026-10-21T10:15:02.236Z",
+      "finalized_block_number": 130285,
+      "finalized_block_hash": "0x99063a77dedcf47cd5f0e932d54ec1784e0127156debf44cc2a1048922dd697f",
+      "metadata_sha256": "a9c5af589080f39a88b8729445396055d656880ce4d4df432c2c42e8b0c3996c",
+      "upload_dry_run_raw_result": "0x0007211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d08500c0973e00fd6b000000000000000000",
+      "upload_dry_run_status": "pass",
+      "scale_vec_length_prefix": "0x214e",
+      "wasm_bytes": 5000,
+      "wasm_sha256": "2eb12ff2ca18063619943f96934fc7d6b40e03a8364a06795c6bb0d49e696271",
+      "broadcast_count": 0
+    }
+  },
+  "previous_observation_recheck": {
+    "finalized_block_number": 128350,
+    "finalized_block_hash": "0x543faf3199495ea53aa4da9f5a3767a95972038688aad97d3916846deb6ed93e",
+    "probe_wasm_sha256": "07e67e68887a9b3ed2e806b6617f934db7d97d413c99ac6e6644b577c6d47274",
+    "previously_recorded_upload_error": "Contracts.StorageDepositNotEnoughFunds",
+    "rechecked_upload_error": "Contracts.CodeRejected",
+    "rechecked_raw_result": "0x0103151c000000",
+    "enforced_and_relaxed_modes_match": true,
+    "result_conflict": true,
+    "assessment": "historical result is not valid compatibility evidence; the malformed SCALE compact length prefix was reproduced as CodeRejected at block 130248"
+  },
+  "metadata_hash_history": [
+    {
+      "block_number": 127136,
+      "metadata_sha256": "1275b664ce7e3ebced4347d06eb8fff4346096751c01cc08e8b50a8c63b3c187"
+    },
+    {
+      "block_number": 127841,
+      "metadata_sha256": "6fe838b338e7f8be4544ab6ff2f488c427541cca3588c5b1d98e376f404dd7db"
+    },
+    {
+      "block_number": 128350,
+      "metadata_sha256": "21119e930457f44e2f9bfde1bf3b0f2be53e14ed5f2a664a68540c5a6a2fb4c2"
+    },
+    {
+      "block_number": 129563,
+      "metadata_sha256": "b096ad2cb9cb11db515fac2a652ae6761eaa852a63d8ed494be2c429eaf3b4b8"
+    },
+    {
+      "block_number": 130285,
+      "metadata_sha256": "a9c5af589080f39a88b8729445396055d656880ce4d4df432c2c42e8b0c3996c"
+    },
+    {
+      "block_number": 130855,
+      "metadata_sha256": "6e88ee7d6e8ef19509be55882fc1c0fc7527736c1ba9c3b97b896ded28fda91d"
+    }
+  ],
+  "transactions": {
+    "broadcast_count": 4,
+    "upload_tx": "0xbcd0ac58f872132a4f6970fdc01fb814ac6070711fd72dcb0c4e3f735d917475",
+    "instantiate_tx": "0xa5021f157378162c3a4b3e79b56e0715358c88853f8b7da0d574b6abbb53c085",
+    "first_ping_tx": "0xf3a96c87072b228abc9c79596ca845ba349c2b99aaac6cf29b9df38cb8b06f3d",
+    "repeat_ping_tx": "0x021a2f3633c33ff8b2c9ba00e9e95adce2b6efd6e6a1915d0d76092cdcecda30"
+  },
+  "decision": "inconclusive",
+  "request_encoding_diagnosis": {
+    "correct_scale_vec_length_prefix_for_5000_bytes": "0x214e",
+    "malformed_prefix_reproducing_code_rejected": "0x204e",
+    "comparison_block_number": 130248,
+    "comparison_block_hash": "0x4dd44835edb02e597f79708f050f8b21133785b8de713e0781a32c217d37722b",
+    "malformed_result": "0x0103151c000000",
+    "correct_result": "0x0007211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d08500c0973e00fd6b000000000000000000",
+    "assessment": "the previous CodeRejected observations were caused by omitting the SCALE compact-length mode bit in the runtime API request"
+  },
+  "repeatability": {
+    "same_instance_read_and_ping": "pass",
+    "second_distinct_instance": "not_run_insufficient_funds",
+    "required_storage_deposit_token": "98.90800000000000",
+    "available_free_balance_token": "93.57270970086899",
+    "shortfall_token": "5.33529029913101",
+    "explicit_deposit_limit_dry_run_error": "Contracts.StorageDepositNotEnoughFunds"
+  },
+  "decision_reason": "The corrected upload and instantiate runtime API dry-runs pass; finalized upload, instantiate, successful get_sequence and ping calls, and ContractEmitted/Called events are verified. A second run repeats the existing contract read and ping successfully. A second independent instance cannot be dry-run with an explicit 98.908 tPOT storage deposit because only 93.57270970086899 tPOT remains free, so the strict full-lifecycle repeatability gate remains inconclusive. The supplied CannotAddSelfAsDelegateDependency text is a documentation excerpt; the P0 probe does not call delegate-dependency APIs."
+}

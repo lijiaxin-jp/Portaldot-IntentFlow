@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "network": "portaldot-testnet",
+  "endpoint_id": "test-node-v3.portaldot.dev",
+  "observed_at_utc": "2026-10-21T10:36:47.235Z",
+  "origin_source": "PORTALDOT_TEST_ACCOUNT_ADDRESS environment variable",
+  "private_signing_material_used": false,
+  "probe": {
+    "wasm_path": "contracts\\p0-probe\\target\\wasm32-unknown-unknown\\release\\portaldot_p0_probe.deployable.wasm",
+    "wasm_bytes": 5000,
+    "wasm_sha256": "2eb12ff2ca18063619943f96934fc7d6b40e03a8364a06795c6bb0d49e696271",
+    "code_variant": "Upload",
+    "code_vec_length_prefix": "0x214e",
+    "constructor_selector": "0x9bae9d5e",
+    "constructor_input_bytes": 5,
+    "salt_bytes": 0
+  },
+  "runtime_api": {
+    "name": "ContractsApi_instantiate",
+    "id": "0x68b66ba122c93fa7",
+    "expected_version": 2
+  },
+  "request": {
+    "scale_bytes": 5059,
+    "sha256": "95f857e455eb5933b90c971908a360cbaaa76a8105b1899f7af914ebddc36fa8",
+    "value": "0",
+    "gas_limit": "None",
+    "storage_deposit_limit": "None",
+    "broadcast_count": 0
+  },
+  "observed_finalized_block": {
+    "number": 130504,
+    "hash": "0x5f59a592bf3211eb995651c65f472c820f30ee914f53a274317b9c4279de1ac0"
+  },
+  "runtime": {
+    "spec_name": "portaldot-v3",
+    "spec_version": 3002,
+    "transaction_version": 2,
+    "metadata_sha256": "cc09a2ffe1dcd1cfdec45f7fc59774900d2d383df4d5443b3180ed43c26fc5d4",
+    "contracts_api_version": 2
+  },
+  "instantiate_dry_run": {
+    "raw_result": "0x36d4584acd9e725f664ace9e01000100202393a1208f0000000000000000000000000000000800008f8cce454e4b65f8f0b994fc2cdf8773cd6c6434dc3ad91e8a1644a6c1d3795a012c000000000000002290753e551702000002061815003872c7ff3d13ed68ff8a856915c6d6f058b4f5732c6c685ea96cb2d95370232000c0973e00fd6b0000000000000000000002150207211a71bb0ea630a8d3e1171493c1c0348692487a19995db28a10602a01d08500c0973e00fd6b0000000000000000003872c7ff3d13ed68ff8a856915c6d6f058b4f5732c6c685ea96cb2d953702320000200038f8cce454e4b65f8f0b994fc2cdf8773cd6c6434dc3ad91e8a1644a6c1d3795a000206008f8cce454e4b65f8f0b994fc2cdf8773cd6c6434dc3ad91e8a1644a6c1d3795a00a0724e180900000000000000000000000206023872c7ff3d13ed68ff8a856915c6d6f058b4f5732c6c685ea96cb2d9537023208f8cce454e4b65f8f0b994fc2cdf8773cd6c6434dc3ad91e8a1644a6c1d3795a00a0724e180900000000000000000000000215003872c7ff3d13ed68ff8a856915c6d6f058b4f5732c6c685ea96cb2d9537023208f8cce454e4b65f8f0b994fc2cdf8773cd6c6434dc3ad91e8a1644a6c1d3795a0002061b15013872c7ff3d13ed68ff8a856915c6d6f058b4f5732c6c685ea96cb2d9537023208f8cce454e4b65f8f0b994fc2cdf8773cd6c6434dc3ad91e8a1644a6c1d3795a00d06c90e40c23000000000000000000000215083872c7ff3d13ed68ff8a856915c6d6f058b4f5732c6c685ea96cb2d9537023208f8cce454e4b65f8f0b994fc2cdf8773cd6c6434dc3ad91e8a1644a6c1d3795a00d06c90e40c230000000000000000000002061b15013872c7ff3d13ed68ff8a856915c6d6f058b4f5732c6c685ea96cb2d9537023208f8cce454e4b65f8f0b994fc2cdf8773cd6c6434dc3ad91e8a1644a6c1d3795a00f0ab75a40d00000000000000000000000215083872c7ff3d13ed68ff8a856915c6d6f058b4f5732c6c685ea96cb2d9537023208f8cce454e4b65f8f0b994fc2cdf8773cd6c6434dc3ad91e8a1644a6c1d3795a00f0ab75a40d0000000000000000000000",
+    "finalized_block_number": 130504,
+    "finalized_block_hash": "0x5f59a592bf3211eb995651c65f472c820f30ee914f53a274317b9c4279de1ac0",
+    "status": "success",
+    "decoded": {
+      "status": "success",
+      "result_variant": 0,
+      "return_flags": 0,
+      "return_data_bytes": 2,
+      "return_data_sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7",
+      "predicted_contract_address": "5FJvXrK1bPCAq4TjSYzM6wE5x5jZX9RCLdD6W1a7UzTc32W3",
+      "gas_consumed": {
+        "ref_time": "311833869",
+        "proof_size": "10163"
+      },
+      "gas_required": {
+        "ref_time": "312055772",
+        "proof_size": "26547"
+      },
+      "storage_deposit": {
+        "kind": "charge",
+        "amount": "40286800000000000"
+      },
+      "debug_message": ""
+    }
+  }
+}
